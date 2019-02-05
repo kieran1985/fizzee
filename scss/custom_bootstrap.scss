@@ -1,0 +1,15 @@
+// Override default colours
+$theme-colors: (
+  'primary': #00b4ff
+);
+
+// Import Bootstrap
+
+@import '../bootstrap/scss/bootstrap';
+
+// $color-white: #fff;
+
+// $color-black: #000;
+// $color-grey-light-1: #fafafa;
+
+// $font-family: 'Bungee Shade', cursive;

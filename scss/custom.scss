@@ -1,0 +1,92 @@
+$font-family: 'Bungee Shade', sans-serif;
+$color-primary: #00b4ff;
+$color-secondary: #00dfff;
+
+.bungee {
+  font-family: $font-family;
+  color: $color-primary;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.navbar {
+  font-weight: 100;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  &-brand h3 {
+    font-family: $font-family;
+    font-weight: 100;
+  }
+  .nav-item {
+    font-size: 1.4rem;
+  }
+  .nav-link {
+    border-bottom: 1px solid transparent;
+  }
+  .nav-link:hover {
+    border-bottom: 1px solid white;
+    transition: all 0.2s;
+  }
+}
+
+#particles-js {
+  height: 90vh;
+  width: 100%;
+}
+#showcase {
+  position: relative;
+  min-height: 90vh;
+  z-index: 1;
+  background: linear-gradient(
+    to right top,
+    rgba($color-secondary, 0.9),
+    rgba($color-primary, 0.9)
+  );
+  & .header {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: $font-family;
+  }
+}
+
+.navbar.scrolled {
+  background: $color-primary;
+  transition: all 0.2s;
+}
+
+.wp-1,
+.wp-2,
+.wp-3,
+.wp-4 {
+  opacity: 0;
+}
+
+.wp-1 .animated,
+.wp-2 .animated,
+.wp-3 .animated,
+.wp-4 .animated {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    background: $color-primary;
+
+    .nav-link:hover {
+      border-bottom: 1px solid transparent;
+    }
+  }
+  #showcase {
+    min-height: 70vh;
+  }
+  #particles-js {
+    height: 70vh;
+  }
+}
